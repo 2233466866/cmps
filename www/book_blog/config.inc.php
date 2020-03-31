@@ -56,7 +56,7 @@ $db = new Typecho_Db('Pdo_Mysql', 'blog_');
 $db->addServer(array (
   'host' => '127.0.0.1',
   'user' => 'root',
-  'password' => 'gi+GZ?5-#Cfp',
+  'password' => '/rady6_eP4_e',
   'charset' => 'utf8',
   'port' => '3306',
   'database' => 'book_blog',
