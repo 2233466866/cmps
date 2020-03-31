@@ -25,11 +25,14 @@ services:
             - ./php.ini:/usr/local/php7/lib/php.ini
             - ./php-fpm.conf:/usr/local/php7/etc/php-fpm.conf
             - ./www.conf:/usr/local/php7/etc/php-fpm.d/www.conf
-        # 权限植入
+        # 目录权限
+        command:
+            - chown -R www:www /www
+            - chown -R mysql:mysql /data/mysql
+        # 用户权限
         privileged: true
         # 容器名称
         container_name: 'lnmp'
         # 镜像名称
         image: '2233466866/lnmp'
-
 
