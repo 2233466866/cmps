@@ -1,0 +1,35 @@
+# 版本选择
+# 参考链接 https://docs.docker.com/compose/compose-file/index.html
+version: '3'
+# 服务列表
+services:
+    # 服务名称
+    lnmp:
+        # 端口映射
+        ports:
+            - '88:80'
+            - '444:443'
+        # 文件挂载
+        volumes:
+            # systemd启用
+            - /sys/fs/cgroup:/sys/fs/cgroup:ro
+            # web目录挂载
+            - ./www:/www
+            # data目录挂载
+            - ./mysql:/data/mysql
+            # 数据配置挂载
+            - ./my.cnf:/etc/my.cnf
+            # Nginx配置挂载
+            - ./nginx.conf:/usr/local/nginx/conf/nginx.conf
+            # PHP所有配置挂载
+            - ./php.ini:/usr/local/php7/lib/php.ini
+            - ./php-fpm.conf:/usr/local/php7/etc/php-fpm.conf
+            - ./www.conf:/usr/local/php7/etc/php-fpm.d/www.conf
+        # 权限植入
+        privileged: true
+        # 容器名称
+        container_name: 'lnmp'
+        # 镜像名称
+        image: '2233466866/lnmp'
+
+
