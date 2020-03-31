@@ -116,13 +116,13 @@ class Pio_Plugin implements Typecho_Plugin_Interface{
                 $model = $plugin -> choose_models;
                 if(is_array($model)){
                     foreach($model as &$item){
-                        $item = Helper::options() -> pluginUrl . "/Pio/models/" . $item . "/model.json";
+                        $item = "/usr/plugins/Pio/models/" . $item . "/model.json";
                     }
                 }else{
-                    $model = array(Helper::options() -> pluginUrl . "/Pio/models/" . $model . "/model.json");
+                    $model = array("/usr/plugins/Pio/models/" . $model . "/model.json");
                 }
             }else{
-                $model = array(Helper::options() -> pluginUrl . "/Pio/models/pio/model.json");
+                $model = array("/usr/plugins/Pio/models/pio/model.json");
             }
             if($plugin -> night){
                 $config["night"] = $plugin -> night;
