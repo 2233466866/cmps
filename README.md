@@ -13,6 +13,17 @@
    ```
    cd cmps
    docker-compose up -d
-   curl http://127.0.0.1:88
+   ```
+
+1. 内容管理
+   ```
+   # 用户侧URL
+   http://[宿主机ip]:88
+   
+   # 系统后台URL
+   http://[宿主机ip]:88/admin/
+   
+   # 系统后台账号密码
+   admin Aa12345
    ```
 
