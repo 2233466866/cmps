@@ -32,7 +32,5 @@ services:
         # 镜像名称
         image: '2233466866/lnmp'
         # 目录权限
-        environment:
-            - chown -R www:www /www
-            - chown -R mysql:mysql /data/mysql
+        # command: bash -c "/usr/sbin/init;chown -R www:www /www;chown -R mysql:mysql /data/mysql"
 
