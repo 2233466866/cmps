@@ -1,4 +1,4 @@
 /.idea/
 /.idea/*
 /www/*.log
-
+/mysql/mysqld.log
