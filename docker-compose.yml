@@ -31,6 +31,4 @@ services:
         container_name: 'lnmp'
         # 镜像名称
         image: '2233466866/lnmp'
-        # 目录权限
-        entrypoint: /usr/bin/owner
 
