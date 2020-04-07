@@ -9,6 +9,12 @@
    git clone https://github.com/2233466866/cmps.git
    ```
 
+1. 修改端口号
+   ```
+   # 容器默认映射到宿主机88端口和444端口
+   # 如果想运行在80端口和443端口，请修改docker-compose.yml
+   ```
+
 1. 使用一键端
    ```
    cd cmps
