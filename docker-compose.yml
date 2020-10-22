@@ -11,8 +11,6 @@ services:
             - '444:443'
         # 文件挂载
         volumes:
-            # systemd启用
-            - /sys/fs/cgroup:/sys/fs/cgroup:ro
             # web目录挂载
             - ./www:/www
             # data目录挂载

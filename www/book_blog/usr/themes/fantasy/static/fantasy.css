@@ -623,4 +623,6 @@ footer h3{ color: #666 }
     margin-right: .75em;
 }
 .foot-social a:last-child{ margin: 0 }
+/*自定义*/
+body > main > div > section > article > p > img{width:100%;}
 

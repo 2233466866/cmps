@@ -144,7 +144,7 @@ var Paul_Pio = function (prop) {
                 window.location.href = "/";
             };
             elements.info.onmouseover = function () {
-                modules.render("想更加深入的了解我吗？");
+                modules.render("额~那里…不可以~");
             };
             current.menu.appendChild(elements.info);
 
@@ -164,7 +164,7 @@ var Paul_Pio = function (prop) {
                 modules.destroy();
             };
             elements.close.onmouseover = function () {
-                modules.render(prop.content.close || "QAQ那么我们下次再见吧~");
+                modules.render(prop.content.close || "开个玩笑,不要这样QAQ~");
             };
             current.menu.appendChild(elements.close);
         },
