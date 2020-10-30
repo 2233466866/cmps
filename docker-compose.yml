@@ -31,15 +31,3 @@ services:
         image: 2233466866/lnmp
         # 自动重启
         restart: always
-        # 网卡绑定
-        networks:
-            network1:
-                ipv4_address: 192.168.0.2
-# 网卡声明
-networks:
-    network1:
-        driver: bridge
-        ipam:
-            config:
-                - subnet: 192.168.0.0/24
-
